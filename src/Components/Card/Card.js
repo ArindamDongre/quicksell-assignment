@@ -1,5 +1,20 @@
 import React from "react";
-import { FaCircle, FaUser } from "react-icons/fa6";
+import {
+  FaEllipsis,
+  FaPlus,
+  FaUser,
+  FaCircle,
+  FaTriangleExclamation,
+  FaCircleCheck,
+} from "react-icons/fa6";
+import {
+  PiCellSignalFullFill,
+  PiCellSignalMediumFill,
+  PiCellSignalLowFill,
+} from "react-icons/pi";
+import { BsCircle } from "react-icons/bs";
+import { TbProgressCheck, TbCircleDotted } from "react-icons/tb";
+import { GiCancel } from "react-icons/gi";
 import "./Card.css";
 function Card(prop) {
   return (
@@ -10,15 +25,17 @@ function Card(prop) {
           {prop.group !== "userId" && <FaUser />}
         </div>
         <div className="content">
-          <div className="icon">
-            <FaUser />
-          </div>
+          {prop.group !== "status" && (
+            <div className="icon">{prop.statusIcons[prop.details.status]}</div>
+          )}
           <div className="title">{prop.details.title}</div>
         </div>
         <div className="footer">
-          <div className="icon">
-            <FaUser />
-          </div>
+          {prop.group !== "priority" && (
+            <div className="icon">
+              {prop.priorityIcons[prop.details.priority]}
+            </div>
+          )}
           <div className="tag">
             <FaCircle className="circle" />
             {prop.details.tag}
