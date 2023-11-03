@@ -1,0 +1,91 @@
+.navigation-bar{
+    height: 3.5rem;
+    width:100%;
+    background-color: #FFFFFF;
+    border-bottom: 1px #EFF1F4;
+}
+
+.nav-btn-container{
+    position: relative;
+}
+.nav-btn{
+    background:#FFFFFF;
+    border: 2px solid #DFE1E4;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px 10px #DFE1E4;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.nav-btn span{
+  font-weight: 600;
+}
+.nav-icon{
+    margin-top: 0.1rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    color: #6C6F75;
+}
+.drop-down{
+    position: absolute;
+    width: 250px;
+    margin-left: 35px;
+    border: 1px solid #D8D8D8;
+    background: #F7F8FA;
+    border-radius: 13px;
+    margin-top: 0.8rem;
+    box-shadow: 1px 1px 10px #DFE1E4;
+    color: #8B8C8C;
+}
+.g-g{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.o-o{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.s-style{
+    width: 100px;
+    border: 1.5px solid #8B8C8C;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+    cursor: pointer;
+}
+
+  .s-style:focus {
+    border-color:#8B8C8C;
+    box-shadow: 1px 1px 10px #DFE1E4;
+  }
+  
+  .s-style:hover {
+    border-color:#8B8C8C;
+  }
+  
+  .s-style option:hover {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .s-style option:checked {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+
+  

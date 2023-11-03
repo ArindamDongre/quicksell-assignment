@@ -1,0 +1,38 @@
+.column-container {
+    width: 18rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  .column-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .column-left svg {
+    font-size: 20px;
+    color: #6C6F75;
+    margin-right: 10px; 
+  }
+  
+  .column-left span {
+    font-weight: 500;
+    margin-right: 10px; 
+    color: #6C6F75;
+  }
+
+  .column-right svg{
+    padding: auto;
+    margin: 5px;
+    color: #6C6F75;
+  }
